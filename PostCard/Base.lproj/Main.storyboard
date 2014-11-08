@@ -77,7 +77,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Send Mail">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -107,6 +107,15 @@
                                     <action selector="EnterMesageClickedIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsR-Ss-xQh"/>
                                 </connections>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egi-rk-seE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="120" width="193" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -116,6 +125,7 @@
                                 <exclude reference="giu-rJ-nhr"/>
                                 <exclude reference="AUd-ic-ZGq"/>
                                 <exclude reference="Rxv-yB-X3t"/>
+                                <exclude reference="Egi-rk-seE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -125,6 +135,7 @@
                                 <include reference="giu-rJ-nhr"/>
                                 <include reference="AUd-ic-ZGq"/>
                                 <include reference="Rxv-yB-X3t"/>
+                                <include reference="Egi-rk-seE"/>
                             </mask>
                         </variation>
                     </view>
@@ -133,6 +144,7 @@
                         <outlet property="enterNameTextField" destination="5eg-TV-0V0" id="Kuo-6G-128"/>
                         <outlet property="mailButton" destination="giu-rJ-nhr" id="lz5-Qr-nb7"/>
                         <outlet property="messageLabel" destination="AUd-ic-ZGq" id="VEs-p9-Mpm"/>
+                        <outlet property="nameLabel" destination="Egi-rk-seE" id="LLR-jj-PnK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
